@@ -321,6 +321,12 @@ public:
   template <typename T>
   const ADMaterialProperty<T> & getADMaterialProperty(const std::string & name,
                                                       MaterialData & material_data);
+  /**
+   * Added by PWH
+   */
+  template <typename T>
+  const ADMaterialProperty<T> & getADMaterialPropertyByName(const MaterialPropertyName & name,
+                                                      MaterialData & material_data);
 
   /**
    * Retrieve the old property deduced from the name \p name for the specified \p material_data
